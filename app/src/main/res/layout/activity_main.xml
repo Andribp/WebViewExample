@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:nestedScrollingEnabled="true">
+
+    <Button
+        android:id="@+id/SpengergasseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Spengergasse"
+        android:drawableLeft="@drawable/spengergasse"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/RedditButton"
+        android:layout_alignEnd="@+id/RedditButton" />
+
+    <Button
+        android:id="@+id/RedditButton"
+        android:text="Reddit"
+        android:drawableLeft="@drawable/reddit3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="true"
+        android:layout_alignBottom="@+id/GoogleButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="62dp"
+        android:layout_marginEnd="62dp"
+        android:layout_below="@+id/SpengergasseButton" />
+    <Button
+        android:id="@+id/GoogleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Google"
+        android:drawableLeft="@drawable/google"
+        android:layout_below="@+id/SpengergasseButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
